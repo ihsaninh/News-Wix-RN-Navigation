@@ -44,25 +44,9 @@ class Home extends Component {
         name: 'Detail',
         passProps: { news: item },
         options: {
-          animations: {
-            push: {
-              content: {
-                translationX: {
-                  from: require('react-native').Dimensions.get('window').width,
-                  to: 0,
-                  duration: 250,
-                },
-              },
-            },
-            pop: {
-              content: {
-                translationX: {
-                  from: 0,
-                  to: require('react-native').Dimensions.get('window').width,
-                  duration: 250,
-                },
-              },
-            },
+          bottomTabs: {
+            visible: false,
+            animate: true,
           },
         },
       },

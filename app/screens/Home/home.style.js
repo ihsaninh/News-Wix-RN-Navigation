@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
   },
   searchWrap: {
-    marginTop: 10,
+    marginTop: 20,
     height: 55,
     flexDirection: 'row',
     borderWidth: 1,
@@ -48,7 +48,8 @@ const styles = StyleSheet.create({
   newsContainer: {
     flexDirection: 'row',
     marginBottom: 5,
-    padding: 20,
+    paddingHorizontal: 20,
+    paddingVertical: 10,
   },
   newsInfoWrap: {
     flexDirection: 'column',
@@ -92,7 +93,7 @@ const tabOptions = {
       fontSize: 22,
       alignment: 'center',
     },
-    elevation: 0,
+    elevation: 2,
   },
   statusBar: {
     backgroundColor: 'white',
