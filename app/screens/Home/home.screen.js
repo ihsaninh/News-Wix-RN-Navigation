@@ -22,6 +22,16 @@ class Home extends Component {
     this.getNewsData();
   }
 
+  renderLoadMore = async () => {
+    const { page } = this.state;
+    this.setState(
+      {
+        page: page + 1,
+      },
+      () => this.getNewsData(),
+    );
+  };
+
   getNewsData = async () => {
     const { page, news } = this.state;
     try {
@@ -51,16 +61,6 @@ class Home extends Component {
         },
       },
     });
-  };
-
-  renderLoadMore = async () => {
-    const { page } = this.state;
-    this.setState(
-      {
-        page: page + 1,
-      },
-      () => this.getNewsData(),
-    );
   };
 
   renderCategoryList = () => {
