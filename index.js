@@ -1,1 +1,3 @@
-require('./app/navigations/RootNavigator');
+import { startScreen } from './app/navigations';
+
+startScreen();
