@@ -1,9 +1,9 @@
 import { Navigation } from 'react-native-navigation';
 import Icon from 'react-native-vector-icons/Feather';
 
-import { RegisterScreens } from '../screens';
 import { setRoot } from './setRoot';
 import { setOptions } from './setOptions';
+import { RegisterScreens } from '../screens';
 
 const startScreen = () => {
   RegisterScreens();
